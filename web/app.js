@@ -65,6 +65,7 @@ function optionRow(letter, text) {
     if (fb.answer === letter) { classes.push("correct"); tags.push("✓ correct answer"); }
     else if (state.final === letter) classes.push("wrong");
     if (state.final === letter) tags.push("your final answer");
+    else if (state.initial === letter) tags.push("your first answer");
     if (fb.ai === letter) tags.push("assistant");
   }
   const disabled = state.stage === "feedback" ? "disabled" : "";

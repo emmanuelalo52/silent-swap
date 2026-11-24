@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="860" viewBox="0 0 1500 860"><rect width="1500" height="860" fill="#ffffff"/><defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a1a19"/></marker>
+<marker id="as" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b26a00"/></marker>
+<marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8a85"/></marker>
+</defs>
+<rect x="20" y="20" width="1460" height="210" rx="16" fill="#f6f5f2"/>
+<text x="40" y="50" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#5a5955" text-anchor="start">OFFLINE  ·  measure the serving change (run once on a GPU)</text>
+<rect x="40" y="70" width="210" height="130" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="56" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">MMLU subset</text>
+<text x="56" y="126" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">1,140 questions</text>
+<text x="56" y="149" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">57 subjects</text>
+<rect x="300" y="70" width="290" height="130" rx="12" fill="#f1effc" stroke="#6250d6" stroke-width="2.2" />
+<text x="316" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Model runner  (AI)</text>
+<text x="316" y="126" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">Qwen3-0.6B scores A-D</text>
+<text x="316" y="149" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">FP16 build</text>
+<text x="316" y="172" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">INT8 / FP8 / INT4 builds*</text>
+<rect x="640" y="70" width="230" height="130" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="656" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Recorded runs</text>
+<text x="656" y="126" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">answer + confidence</text>
+<text x="656" y="149" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">per question, per build</text>
+<rect x="920" y="70" width="230" height="130" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="936" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Flip analyser</text>
+<text x="936" y="126" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">accuracy, flips,</text>
+<text x="936" y="149" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">flips by confidence</text>
+<rect x="1200" y="70" width="260" height="130" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="1216" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Session planner</text>
+<text x="1216" y="126" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">picks swap build</text>
+<text x="1216" y="149" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">notice rule (flips >= 2%)</text>
+<text x="1216" y="172" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">24 questions</text>
+<line x1="250" y1="135" x2="298" y2="135" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<line x1="590" y1="135" x2="638" y2="135" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<line x1="870" y1="135" x2="918" y2="135" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<line x1="1150" y1="135" x2="1198" y2="135" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<rect x="20" y="250" width="1460" height="400" rx="16" fill="#f6f5f2"/>
+<text x="40" y="280" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#5a5955" text-anchor="start">ONLINE  ·  study session (no GPU needed)</text>
+<rect x="40" y="340" width="190" height="110" rx="12" fill="#eef4fc" stroke="#1a1a19" stroke-width="2.2" />
+<text x="56" y="370" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Participant</text>
+<text x="56" y="396" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">browser</text>
+<rect x="290" y="300" width="300" height="190" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="306" y="330" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Web interface</text>
+<text x="306" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">1  own answer</text>
+<text x="306" y="379" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">2  AI suggestion + confidence</text>
+<text x="306" y="402" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">3  final answer, then feedback</text>
+<text x="306" y="425" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">notice + build label</text>
+<text x="306" y="448" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">(notice condition only)</text>
+<rect x="740" y="290" width="400" height="220" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="756" y="320" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Session server</text>
+<rect x="760" y="335" width="360" height="40" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="776" y="365" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start"></text>
+<text x="776" y="361" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="600" font-style="normal" fill="#1a1a19" text-anchor="start">Condition: control / silent / notice</text>
+<rect x="760" y="385" width="360" height="40" rx="12" fill="#f1effc" stroke="#6250d6" stroke-width="2.2" />
+<text x="776" y="415" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start"></text>
+<text x="776" y="411" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="600" font-style="normal" fill="#1a1a19" text-anchor="start">Serving router: FP16, swap at Q13  (AI)</text>
+<rect x="760" y="435" width="360" height="40" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="776" y="465" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start"></text>
+<text x="776" y="461" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="600" font-style="normal" fill="#1a1a19" text-anchor="start">Change notifier  ·  Logger</text>
+<rect x="1200" y="300" width="260" height="100" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="1216" y="330" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Session logs</text>
+<text x="1216" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">one JSONL file</text>
+<text x="1216" y="379" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">per participant</text>
+<rect x="1200" y="440" width="260" height="110" rx="12" fill="#ffffff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="1216" y="470" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Reliance analysis</text>
+<text x="1216" y="496" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">agreement before / after</text>
+<text x="1216" y="519" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">on flipped vs stable</text>
+<text x="1216" y="542" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">questions</text>
+<line x1="230" y1="380" x2="288" y2="380" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<text x="259" y="370" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="middle">answers</text>
+<line x1="288" y1="420" x2="232" y2="420" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<text x="259" y="446" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="middle">screens</text>
+<line x1="590" y1="370" x2="738" y2="370" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<text x="664" y="360" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="middle">get session, answer</text>
+<line x1="738" y1="430" x2="592" y2="430" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<text x="665" y="456" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="middle">AI answer, feedback</text>
+<line x1="1140" y1="350" x2="1198" y2="350" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<line x1="1330" y1="400" x2="1330" y2="438" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<line x1="1330" y1="200" x2="1330" y2="262" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<line x1="1330" y1="262" x2="1142" y2="292" stroke="#1a1a19" stroke-width="2"  marker-end="url(#a)"/>
+<text x="1268" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="middle">session plan</text>
+<rect x="920" y="545" width="220" height="90" rx="12" fill="#ffffff" stroke="#b26a00" stroke-width="2.2" stroke-dasharray="9 6"/>
+<text x="936" y="575" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#1a1a19" text-anchor="start">Scripted participants</text>
+<text x="936" y="601" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">3 policies x 3 conditions</text>
+<text x="936" y="624" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">pipeline test</text>
+<line x1="1030" y1="545" x2="1030" y2="512" stroke="#b26a00" stroke-width="2" stroke-dasharray="9 6" marker-end="url(#as)"/>
+<rect x="20" y="670" width="1460" height="170" rx="16" fill="#f6f5f2"/>
+<text x="40" y="700" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#5a5955" text-anchor="start">PLANNED</text>
+<rect x="40" y="710" width="230" height="110" rx="12" fill="#ffffff" stroke="#8c8a85" stroke-width="2.2" stroke-dasharray="2 5"/>
+<text x="56" y="740" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#8c8a85" text-anchor="start">Participant study</text>
+<text x="56" y="766" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">ethics approval</text>
+<text x="56" y="789" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">~150 people online</text>
+<rect x="290" y="710" width="330" height="110" rx="12" fill="#ffffff" stroke="#8c8a85" stroke-width="2.2" stroke-dasharray="2 5"/>
+<text x="306" y="740" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#8c8a85" text-anchor="start">Per-answer change flag</text>
+<text x="306" y="766" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">shadow FP16 check</text>
+<text x="306" y="789" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">marks answers that changed</text>
+<rect x="740" y="710" width="330" height="110" rx="12" fill="#ffffff" stroke="#8c8a85" stroke-width="2.2" stroke-dasharray="2 5"/>
+<text x="756" y="740" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" font-style="normal" fill="#8c8a85" text-anchor="start">Live inference server</text>
+<text x="756" y="766" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">serve + hot-swap builds</text>
+<text x="756" y="789" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">instead of replaying runs</text>
+<line x1="135" y1="710" x2="135" y2="452" stroke="#8c8a85" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ap)"/>
+<line x1="455" y1="710" x2="455" y2="492" stroke="#8c8a85" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ap)"/>
+<line x1="820" y1="710" x2="820" y2="512" stroke="#8c8a85" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ap)"/>
+<text x="1130" y="716" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#5a5955" text-anchor="start">Status</text>
+<rect x="1130" y="730" width="44" height="20" rx="5" fill="#fff" stroke="#1a1a19" stroke-width="2.2" />
+<text x="1186" y="746" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" font-style="normal" fill="#1a1a19" text-anchor="start">implemented</text>
+<rect x="1130" y="760" width="44" height="20" rx="5" fill="#fff" stroke="#b26a00" stroke-width="2.2" stroke-dasharray="9 6"/>
+<text x="1186" y="776" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" font-style="normal" fill="#1a1a19" text-anchor="start">simulated</text>
+<rect x="1130" y="790" width="44" height="20" rx="5" fill="#fff" stroke="#8c8a85" stroke-width="2.2" stroke-dasharray="2 5"/>
+<text x="1186" y="806" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" font-style="normal" fill="#1a1a19" text-anchor="start">planned</text>
+<rect x="1290" y="730" width="44" height="20" rx="5" fill="#f1effc" stroke="#6250d6" stroke-width="2.2"/>
+<text x="1346" y="746" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" font-style="normal" fill="#1a1a19" text-anchor="start">AI behaviour</text>
+<text x="1130" y="834" font-family="'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="400" font-style="normal" fill="#5a5955" text-anchor="start">* quantized numerics simulated in FP16</text></svg>
