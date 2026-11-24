@@ -1,0 +1,611 @@
+{
+ "model": "Qwen3-0.6B",
+ "before": {
+  "config": "fp16",
+  "name": "standard 16-bit build",
+  "accuracy": 0.4202
+ },
+ "after": {
+  "config": "fp8",
+  "name": "compressed 8-bit (FP8) build",
+  "label": "FP8 (E4M3) weights, per-channel scale",
+  "accuracy": 0.4289,
+  "flip_rate": 0.1158
+ },
+ "swap_at": 13,
+ "notice_rule": {
+  "threshold": 0.02,
+  "flip_rate": 0.1158,
+  "noise_floor_fp32_vs_fp16": 0.0035,
+  "notify": true
+ },
+ "notice": {
+  "title": "Assistant update from question 13",
+  "changed": "The assistant now runs a compressed 8-bit (FP8) build of the same model, which is cheaper to serve.",
+  "unchanged": "Its overall accuracy on our test set is about the same: 42.0% before, 42.9% after.",
+  "watch": "But about 1 in 9 of its answers changed, mostly ones it was unsure about. Look twice at low-confidence suggestions."
+ },
+ "subjects": [
+  "high school government and politics",
+  "sociology",
+  "world religions"
+ ],
+ "items": [
+  {
+   "n": 1,
+   "id": "high_school_government_and_politics-0470",
+   "subject": "high school government and politics",
+   "question": "While ratifying the Constitution, the primary point of disagreement between Federalists and Anti-Federalists was over",
+   "choices": [
+    "whether representation in Congress should be equal among states or proportional to population",
+    "the strength of the federal government relative to the states",
+    "the future of the slave trade",
+    "whether people had inalienable rights"
+   ],
+   "answer": "B",
+   "before": {
+    "pred": "A",
+    "confidence": 0.87719,
+    "correct": false
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.84724,
+    "correct": false
+   },
+   "flipped": false
+  },
+  {
+   "n": 2,
+   "id": "sociology-1072",
+   "subject": "sociology",
+   "question": "War became possible between nation states in the nineteenth century because:",
+   "choices": [
+    "the world was divided into several rival overseas empires",
+    "industrialization provided better transport, technology and administration",
+    "there was intense economic, political and military competition",
+    "all of the above"
+   ],
+   "answer": "D",
+   "before": {
+    "pred": "D",
+    "confidence": 0.99725,
+    "correct": true
+   },
+   "after": {
+    "pred": "D",
+    "confidence": 0.98593,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 3,
+   "id": "world_religions-1127",
+   "subject": "world religions",
+   "question": "According to Hindu tradition, which age are we in currently?",
+   "choices": [
+    "Kali yuga",
+    "Maha yuga",
+    "Krita yuga",
+    "Satya yuga"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.82893,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.86504,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 4,
+   "id": "high_school_government_and_politics-0472",
+   "subject": "high school government and politics",
+   "question": "Which of the following constitutional principles might be violated if the Environmental Protection Agency issued, enforced, and adjudicated all disputes regarding a new regulation?",
+   "choices": [
+    "Vertical federalism",
+    "Due process of law",
+    "Comity",
+    "Separation of powers"
+   ],
+   "answer": "D",
+   "before": {
+    "pred": "A",
+    "confidence": 0.60234,
+    "correct": false
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.34956,
+    "correct": false
+   },
+   "flipped": false
+  },
+  {
+   "n": 5,
+   "id": "sociology-1078",
+   "subject": "sociology",
+   "question": "Traditional working class identity was based around:",
+   "choices": [
+    "shared working conditions in the manufacturing industry",
+    "the class consciousness of members of the proletariat",
+    "local communities, extended kinship networks and shared leisure pursuits",
+    "collective aspirations to move into the middle class"
+   ],
+   "answer": "C",
+   "before": {
+    "pred": "A",
+    "confidence": 0.52251,
+    "correct": false
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.49865,
+    "correct": false
+   },
+   "flipped": false
+  },
+  {
+   "n": 6,
+   "id": "world_religions-1121",
+   "subject": "world religions",
+   "question": "In the Zoroastrian tradition, the term Gathas refers to which of the following?",
+   "choices": [
+    "Hymns",
+    "Laws",
+    "Ethics",
+    "Myths"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "B",
+    "confidence": 0.45905,
+    "correct": false
+   },
+   "after": {
+    "pred": "B",
+    "confidence": 0.51192,
+    "correct": false
+   },
+   "flipped": false
+  },
+  {
+   "n": 7,
+   "id": "high_school_government_and_politics-0471",
+   "subject": "high school government and politics",
+   "question": "The House Rules Committee is considered among the most powerful in the House of Representatives because it has great power over the",
+   "choices": [
+    "ethical conduct of House members",
+    "selection of federal judges",
+    "number of subcommittees that a standing committee may establish at any given time",
+    "scheduling of votes and the conditions under which bills are debated and amended"
+   ],
+   "answer": "D",
+   "before": {
+    "pred": "D",
+    "confidence": 0.96741,
+    "correct": true
+   },
+   "after": {
+    "pred": "D",
+    "confidence": 0.96391,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 8,
+   "id": "sociology-1079",
+   "subject": "sociology",
+   "question": "Butler & Stokes (1969) suggested that working class support for the Labour Party arose from:",
+   "choices": [
+    "socialization into working class families and communities",
+    "rational calculation of self-interest",
+    "issue-based concerns about culture and lifestyle",
+    "false consciousness and the acceptance of hegemonic values"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.89427,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.8167,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 9,
+   "id": "world_religions-1125",
+   "subject": "world religions",
+   "question": "Which pope promoted the cults of St. Peter and St. Paul to bolster authority in Rome?",
+   "choices": [
+    "Gregory",
+    "Augustine",
+    "Athanasius",
+    "Francis"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.78576,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.82914,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 10,
+   "id": "high_school_government_and_politics-0464",
+   "subject": "high school government and politics",
+   "question": "House members are more concerned about their committee assignments than are senators because",
+   "choices": [
+    "House members may serve on only one committee at a time",
+    "Senate committees have relatively little power to alter legislation",
+    "bills in the Senate must pass through all committees before reaching the floor",
+    "the rules make it extremely difficult for representatives to influence legislation on the House floor"
+   ],
+   "answer": "D",
+   "before": {
+    "pred": "A",
+    "confidence": 0.83413,
+    "correct": false
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.65031,
+    "correct": false
+   },
+   "flipped": false
+  },
+  {
+   "n": 11,
+   "id": "sociology-1070",
+   "subject": "sociology",
+   "question": "Pluralist theories suggest that:",
+   "choices": [
+    "the state's power can be exercised through several different administrative structures",
+    "the ruling elite is composed of people from various class backgrounds",
+    "political parties must compete for the votes of 'consumers' in the electorate",
+    "there is a close alignment between class background and party preference"
+   ],
+   "answer": "C",
+   "before": {
+    "pred": "A",
+    "confidence": 0.67025,
+    "correct": false
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.5226,
+    "correct": false
+   },
+   "flipped": false
+  },
+  {
+   "n": 12,
+   "id": "world_religions-1135",
+   "subject": "world religions",
+   "question": "What does \"Svetambara\" mean?",
+   "choices": [
+    "\"Sky-clad\"",
+    "\"Naked\"",
+    "\"White-clad\"",
+    "\"Clothed\""
+   ],
+   "answer": "C",
+   "before": {
+    "pred": "C",
+    "confidence": 0.83742,
+    "correct": true
+   },
+   "after": {
+    "pred": "C",
+    "confidence": 0.78865,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 13,
+   "id": "sociology-1074",
+   "subject": "sociology",
+   "question": "The ecological approach to urban sociology involved studying:",
+   "choices": [
+    "how social groups colonized different areas of the city and competed for resources",
+    "the forms of wildlife and natural habitats that could be found on the edges of the city",
+    "the way in which people organized collective protests about environmental issues",
+    "how men and women used the city's public spaces differently"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.72881,
+    "correct": true
+   },
+   "after": {
+    "pred": "B",
+    "confidence": 0.52852,
+    "correct": false
+   },
+   "flipped": true
+  },
+  {
+   "n": 14,
+   "id": "sociology-1069",
+   "subject": "sociology",
+   "question": "Pre-testing a questionnaire is useful for:",
+   "choices": [
+    "finding out which topics are important to the respondents",
+    "testing out your computer and printer",
+    "identifying any problems with the question wording and routing",
+    "deciding which respondents to leave out of the final sample"
+   ],
+   "answer": "C",
+   "before": {
+    "pred": "A",
+    "confidence": 0.59806,
+    "correct": false
+   },
+   "after": {
+    "pred": "C",
+    "confidence": 0.6216,
+    "correct": true
+   },
+   "flipped": true
+  },
+  {
+   "n": 15,
+   "id": "world_religions-1122",
+   "subject": "world religions",
+   "question": "Which monk developed Pure Land Buddhism as we know it today?",
+   "choices": [
+    "Genshin",
+    "Dogen",
+    "Honen",
+    "Shinran"
+   ],
+   "answer": "C",
+   "before": {
+    "pred": "B",
+    "confidence": 0.90907,
+    "correct": false
+   },
+   "after": {
+    "pred": "B",
+    "confidence": 0.92622,
+    "correct": false
+   },
+   "flipped": false
+  },
+  {
+   "n": 16,
+   "id": "world_religions-1133",
+   "subject": "world religions",
+   "question": "What is a mohel?",
+   "choices": [
+    "A ritual circumciser",
+    "A type of oil lame",
+    "A teacher",
+    "A covenant"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.7857,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.62658,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 17,
+   "id": "high_school_government_and_politics-0473",
+   "subject": "high school government and politics",
+   "question": "Which of the following people would most likely be accused of influence peddling?",
+   "choices": [
+    "A congressperson who retires to take a position teaching political science at a university",
+    "A former president who advises a current president on a particular foreign policy issue",
+    "A voter who researches the positions of all candidates in a race before choosing whom to support",
+    "An official who leaves the State Department to work as a paid consultant to foreign governments"
+   ],
+   "answer": "D",
+   "before": {
+    "pred": "A",
+    "confidence": 0.50252,
+    "correct": false
+   },
+   "after": {
+    "pred": "D",
+    "confidence": 0.3633,
+    "correct": true
+   },
+   "flipped": true
+  },
+  {
+   "n": 18,
+   "id": "high_school_government_and_politics-0463",
+   "subject": "high school government and politics",
+   "question": "The origination clause of the Constitution states that",
+   "choices": [
+    "the Bill of Rights must not be infringed upon by any state legislature",
+    "Congress and the president must jointly create the annual federal budget",
+    "revenue bills must be initiated in the House of Representatives",
+    "the Supreme Court has original jurisdiction over all constitutional matters"
+   ],
+   "answer": "C",
+   "before": {
+    "pred": "C",
+    "confidence": 0.41973,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.41774,
+    "correct": false
+   },
+   "flipped": true
+  },
+  {
+   "n": 19,
+   "id": "sociology-1073",
+   "subject": "sociology",
+   "question": "Which of the following was not a strategy used by the Conservative government of 1979 to reduce the power of the labour movement?",
+   "choices": [
+    "making all strike action illegal",
+    "imposing restrictions on picketing",
+    "banning political strikes that were not primarily concerned with the worker's own conditions of work",
+    "making secondary action (in support of workers elsewhere) illegal"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.93009,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.86277,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 20,
+   "id": "high_school_government_and_politics-0477",
+   "subject": "high school government and politics",
+   "question": "What power was granted to the states by the Articles of Confederation but not by the Constitution?",
+   "choices": [
+    "Coining money",
+    "Authorizing constitutional amendments",
+    "Having representation in Congress",
+    "Appealing to the president to adjudicate disputes"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.8198,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.55322,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 21,
+   "id": "world_religions-1131",
+   "subject": "world religions",
+   "question": "What does the term matsuri mean?",
+   "choices": [
+    "Amulets",
+    "Meditation",
+    "Rituals",
+    "Grand festivals"
+   ],
+   "answer": "D",
+   "before": {
+    "pred": "D",
+    "confidence": 0.84561,
+    "correct": true
+   },
+   "after": {
+    "pred": "D",
+    "confidence": 0.89836,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 22,
+   "id": "world_religions-1120",
+   "subject": "world religions",
+   "question": "What is the most important prayer in Judaism?",
+   "choices": [
+    "The Shema",
+    "The Sefirot",
+    "Deuteronomy",
+    "The Decalogue"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.71233,
+    "correct": true
+   },
+   "after": {
+    "pred": "A",
+    "confidence": 0.7464,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 23,
+   "id": "sociology-1068",
+   "subject": "sociology",
+   "question": "Herberg's (1955) study of religion in America suggested that:",
+   "choices": [
+    "ethnic minorities practised religion to achieve social acceptance in the culture",
+    "mainstream faiths were becoming increasingly identified with national identity",
+    "the moral teachings of the main religions were becoming relatively similar",
+    "all of the above"
+   ],
+   "answer": "D",
+   "before": {
+    "pred": "D",
+    "confidence": 0.99813,
+    "correct": true
+   },
+   "after": {
+    "pred": "D",
+    "confidence": 0.99315,
+    "correct": true
+   },
+   "flipped": false
+  },
+  {
+   "n": 24,
+   "id": "high_school_government_and_politics-0466",
+   "subject": "high school government and politics",
+   "question": "Which of the following actions can the president take without congressional approval?",
+   "choices": [
+    "Grant reprieves and pardons",
+    "Appoint Supreme Court justices",
+    "Negotiate and ratify treaties",
+    "Declare war"
+   ],
+   "answer": "A",
+   "before": {
+    "pred": "A",
+    "confidence": 0.53115,
+    "correct": true
+   },
+   "after": {
+    "pred": "B",
+    "confidence": 0.45546,
+    "correct": false
+   },
+   "flipped": true
+  }
+ ]
+}

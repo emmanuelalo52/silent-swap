@@ -27,7 +27,8 @@ ANALYSIS = ROOT / "analysis"
 SUBJECTS = ["high_school_geography", "high_school_psychology", "marketing", "nutrition", "sociology",
             "us_foreign_policy", "world_religions", "miscellaneous", "management", "human_aging",
             "public_relations", "high_school_government_and_politics", "global_facts", "prehistory",
-            "astronomy", "high_school_biology", "business_ethics", "human_sexuality"]
+            "astronomy", "high_school_biology", "business_ethics"]
+# Sensitive subjects (for example human_sexuality) are left out so the study needs no content warnings.
 BUILD_NAMES = {"fp16": "standard 16-bit build", "fp32": "full-precision 32-bit build",
                "w8": "compressed 8-bit build", "fp8": "compressed 8-bit (FP8) build",
                "w4g128": "compressed 4-bit build", "w4g32": "compressed 4-bit build"}
