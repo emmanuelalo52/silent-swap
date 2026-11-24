@@ -57,7 +57,7 @@ def plot(rows, path):
 
     rows = [r for r in rows if r["flips"] > 0]
     labels = [b["margin"] for b in rows[0]["flips_by_reference_margin"]]
-    fig, ax = plt.subplots(figsize=(7, 3.6), dpi=200)
+    fig, ax = plt.subplots(figsize=(7, 3.8), dpi=200)
     width = 0.8 / len(rows)
     colors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4"]
     for k, r in enumerate(rows):
@@ -71,7 +71,7 @@ def plot(rows, path):
     ax.spines[["top", "right"]].set_visible(False)
     ax.grid(axis="y", color="#e4e2dc", linewidth=0.8)
     ax.set_axisbelow(True)
-    ax.legend(frameon=False, fontsize=8)
+    ax.legend(frameon=False, fontsize=8, ncol=3, loc="lower center", bbox_to_anchor=(0.5, 1.0))
     fig.tight_layout()
     fig.savefig(path)
 
