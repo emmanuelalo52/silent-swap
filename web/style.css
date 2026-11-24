@@ -1,0 +1,63 @@
+:root {
+  --surface: #fcfcfb; --card: #ffffff; --rule: #e4e2dc; --text: #1a1a19; --text2: #52514e;
+  --muted: #77756f; --accent: #2a78d6; --accent-soft: #eaf2fc; --ai: #6250d6; --ai-soft: #f0eefc;
+  --good: #0b7d0b; --good-soft: #e7f5e7; --bad: #b42e2e; --bad-soft: #fbeaea; --warn-soft: #fff6e0;
+  --warn: #8a5a00;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--surface); color: var(--text);
+  font: 16px/1.45 "Segoe UI", system-ui, -apple-system, Arial, sans-serif; }
+.top { display: flex; justify-content: space-between; align-items: baseline;
+  max-width: 860px; margin: 0 auto; padding: 22px 20px 6px; }
+.brand { font-weight: 700; font-size: 20px; }
+.progress { color: var(--text2); font-size: 15px; }
+.record { max-width: 860px; margin: 0 auto; padding: 4px 20px 10px; display: flex; flex-wrap: wrap;
+  gap: 8px; font-size: 14px; color: var(--text2); }
+.chip { background: var(--card); border: 1px solid var(--rule); border-radius: 999px; padding: 3px 11px; }
+.chip b { color: var(--text); }
+.build { max-width: 820px; margin: 0 auto 10px; padding: 8px 14px; border-radius: 10px;
+  background: var(--warn-soft); color: var(--warn); font-size: 14px; border: 1px solid #f1dfb0; }
+.main { max-width: 860px; margin: 0 auto; padding: 0 20px 40px; }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 16px; padding: 22px 24px; }
+.subject { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.question { font-size: 19px; font-weight: 600; margin: 6px 0 16px; }
+.step { font-size: 14px; color: var(--text2); margin: 0 0 10px; }
+.step b { color: var(--text); }
+.options { display: grid; gap: 8px; }
+.opt { display: flex; gap: 12px; align-items: flex-start; text-align: left; width: 100%;
+  font: inherit; background: var(--card); color: var(--text); border: 1.5px solid var(--rule);
+  border-radius: 12px; padding: 11px 14px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; }
+.opt .letter { font-weight: 700; min-width: 18px; }
+.opt .tag { margin-left: auto; font-size: 13px; white-space: nowrap; padding-left: 10px; color: var(--text2); }
+.opt.selected { border-color: var(--accent); background: var(--accent-soft); }
+.opt.ai-pick { border-color: var(--ai); }
+.opt.correct { border-color: var(--good); background: var(--good-soft); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.ai { margin: 16px 0 4px; padding: 14px 16px; border-radius: 12px; background: var(--ai-soft);
+  border: 1px solid #d9d4f7; }
+.ai .says { font-size: 17px; }
+.ai .says b { color: var(--ai); }
+.conf { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 14px; color: var(--text2); }
+.bar { flex: 0 0 220px; height: 8px; border-radius: 4px; background: #dcd8f3; overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--ai); border-radius: 4px; }
+.prov { margin-top: 6px; font-size: 13px; color: var(--warn); }
+.result { margin: 16px 0 0; padding: 12px 14px; border-radius: 12px; background: #f6f5f2; font-size: 15px; }
+.result .ok { color: var(--good); font-weight: 600; }
+.result .no { color: var(--bad); font-weight: 600; }
+.actions { display: flex; justify-content: flex-end; margin-top: 18px; }
+.btn { font: inherit; font-weight: 600; border: 0; border-radius: 10px; padding: 10px 18px;
+  background: var(--accent); color: #fff; cursor: pointer; }
+.btn:disabled { background: #b9cde9; cursor: default; }
+.muted { color: var(--muted); }
+.overlay { position: fixed; inset: 0; background: rgba(20, 20, 19, .45); display: grid; place-items: center; padding: 20px; }
+.overlay[hidden] { display: none; }
+.notice { max-width: 560px; background: var(--card); border-radius: 16px; padding: 24px 26px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .18); }
+.notice h2 { margin: 0 0 12px; font-size: 20px; }
+.notice dl { margin: 0; display: grid; grid-template-columns: 175px 1fr; gap: 10px 14px; font-size: 15px; }
+.notice dt { font-weight: 600; color: var(--text2); }
+.notice dd { margin: 0; }
+.done h2 { margin-top: 0; }
+.debrief { margin-top: 16px; padding: 14px 16px; border-radius: 12px; background: var(--warn-soft); font-size: 15px; }
