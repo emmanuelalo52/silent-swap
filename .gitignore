@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+# real participant logs stay off GitHub; simulated logs in logs/sim are kept
+logs/*.jsonl
+logs/demo/
+*.pyc
+.env
